@@ -4,8 +4,11 @@
     <div class="relative overflow-hidden">
       <section class="relative h-[80vh] lg:h-[90vh] flex items-center justify-center bg-center bg-no-repeat bg-cover transition-all duration-700"
         :style="{ backgroundImage: `url('/img/bg-hero2.jpg')` }">
-        <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/60 to-slate-900/90"></div>
+        <!-- Main Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/60 to-transparent"></div>
+        
+        <!-- Bottom Blend Overlay (Menyatu dengan konten bawah) -->
+        <div class="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-slate-50 via-slate-50/20 to-transparent z-0"></div>
         
         <div class="relative px-6 mx-auto max-w-screen-xl text-center z-10">
           <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-white uppercase bg-button/20 border border-button/30 rounded-full backdrop-blur-sm animate-fade-in">
