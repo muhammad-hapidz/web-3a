@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <div class="relative overflow-hidden">
       <section class="relative h-[80vh] lg:h-[90vh] flex items-center justify-center bg-center bg-no-repeat bg-cover transition-all duration-700"
-        :style="{ backgroundImage: `url('/src/assets/img/bg-hero2.jpg')` }">
+        :style="{ backgroundImage: `url('/img/bg-hero2.jpg')` }">
         <!-- Gradient Overlay -->
         <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/60 to-slate-900/90"></div>
         
