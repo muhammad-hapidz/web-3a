@@ -23,7 +23,22 @@
       <nav class="hidden lg:block">
         <ul class="flex items-center space-x-2">
           <li v-for="item in navItems" :key="item.path">
+            <a
+              v-if="item.isExternal"
+              :href="item.path"
+              :target="item.target"
+              :class="[
+                'relative px-5 py-2 text-[15px] font-bold tracking-wide transition-all duration-300 rounded-full group inline-block',
+                isScrolled ? 'text-slate-700 hover:text-button' : 'text-white hover:text-button'
+              ]"
+            >
+              {{ item.name }}
+              <span 
+                class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-1 bg-button rounded-full transition-all duration-300 group-hover:w-5"
+              ></span>
+            </a>
             <RouterLink
+              v-else
               :to="item.path"
               @click="scrollToTop"
               :class="[
@@ -102,7 +117,17 @@
           
           <ul class="flex flex-col p-8 space-y-6">
             <li v-for="item in navItems" :key="item.path">
+              <a
+                v-if="item.isExternal"
+                :href="item.path"
+                :target="item.target"
+                @click="closeMenu"
+                class="block text-2xl font-bold transition-all duration-300 text-slate-800 hover:text-button hover:translate-x-2"
+              >
+                {{ item.name }}
+              </a>
               <RouterLink
+                v-else
                 :to="item.path"
                 @click="closeMenu"
                 :class="[
@@ -142,7 +167,6 @@ const navItems = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
   { name: 'Portfolio', path: '/portofolio' },
-  
 ];
 
 const handleScroll = () => {

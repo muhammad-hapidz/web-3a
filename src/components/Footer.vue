@@ -43,8 +43,16 @@
         </div>
   
         <!-- Bottom Section -->
-        <div class="mt-8 text-center text-sm text-gray-300">
-          &copy; 2025 PT.Aditya Arta Abadi. All rights reserved.
+        <div class="mt-8 text-center text-sm text-gray-300 space-y-2">
+          <p class="text-gray-300">&copy; 2025 PT.Aditya Arta Abadi. All rights reserved.</p>
+          <div>
+            <a 
+              href="/privacy-policy.html" 
+              class="text-gray-300 hover:text-white hover:underline transition-colors duration-200"
+            >
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>

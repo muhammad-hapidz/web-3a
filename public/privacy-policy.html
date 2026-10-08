@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Tri3A | TheSurvey</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        button: '#ff6e6c',
+                        primary: '#FFFFFF',
+                        secondary: '#111827',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        merriweather: ['Poppins', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .policy-content h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .policy-content p {
+            margin-bottom: 1rem;
+            color: #475569;
+            line-height: 1.75;
+        }
+
+        .policy-content ul {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+            list-style-type: disc;
+        }
+
+        .policy-content li {
+            margin-bottom: 0.6rem;
+            color: #475569;
+            line-height: 1.65;
+        }
+
+        .policy-content li strong {
+            color: #0f172a;
+        }
+
+        .policy-content code {
+            background-color: #f1f5f9;
+            color: #e11d48;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.375rem;
+            font-size: 0.875em;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-button/30 min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header id="navbar"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-gradient-to-b from-black/60 to-transparent py-5">
+        <div class="container mx-auto max-w-screen-xl flex items-center justify-between px-6 lg:px-12">
+            <!-- Logo -->
+            <div class="relative z-10">
+                <a href="/" class="block">
+                    <div class="h-8 lg:h-10 w-48 lg:w-64 flex items-center">
+                        <img id="nav-logo" src="/img/logo3a-white.png" alt="3a Logo"
+                            class="max-h-full max-w-full object-contain object-left transition-all duration-500 hover:scale-105">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Navbar Menu -->
+            <nav class="hidden lg:block">
+                <ul class="flex items-center space-x-2">
+                    <li>
+                        <a href="/"
+                            class="nav-link relative px-5 py-2 text-[15px] font-bold tracking-wide transition-all duration-300 rounded-full group inline-block text-white hover:text-button">
+                            Home
+                            <span
+                                class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-1 bg-button rounded-full transition-all duration-300 group-hover:w-5"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about"
+                            class="nav-link relative px-5 py-2 text-[15px] font-bold tracking-wide transition-all duration-300 rounded-full group inline-block text-white hover:text-button">
+                            About Us
+                            <span
+                                class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-1 bg-button rounded-full transition-all duration-300 group-hover:w-5"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/portofolio"
+                            class="nav-link relative px-5 py-2 text-[15px] font-bold tracking-wide transition-all duration-300 rounded-full group inline-block text-white hover:text-button">
+                            Portfolio
+                            <span
+                                class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-1 bg-button rounded-full transition-all duration-300 group-hover:w-5"></span>
+                        </a>
+                    </li>
+
+                    <li class="pl-6">
+                        <a href="/contact-us"
+                            class="px-8 py-2.5 bg-button text-white text-xs font-black uppercase tracking-widest rounded-full shadow-lg shadow-button/30 hover:scale-105 hover:-translate-y-0.5 active:scale-95 transition-all duration-300 inline-block">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu Button -->
+            <button id="mobile-toggle" aria-label="Toggle menu"
+                class="lg:hidden relative z-50 w-10 h-10 flex flex-col justify-center items-center focus:outline-none bg-button/10 rounded-xl">
+                <div class="w-5 h-4 flex flex-col justify-between">
+                    <span id="bar-1" class="w-full h-0.5 transition-all duration-300 bg-white"></span>
+                    <span id="bar-2" class="w-full h-0.5 transition-all duration-300 bg-white"></span>
+                    <span id="bar-3" class="w-full h-0.5 transition-all duration-300 bg-white"></span>
+                </div>
+            </button>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-overlay"
+                class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm lg:hidden z-40 hidden opacity-0 transition-opacity duration-300">
+            </div>
+
+            <!-- Mobile Menu Side Panel -->
+            <nav id="mobile-menu"
+                class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white shadow-2xl z-50 flex flex-col lg:hidden translate-x-full transition-transform duration-300">
+                <div class="p-8 flex justify-between items-center border-b border-slate-50">
+                    <img src="/img/logo3a.png" alt="3a Logo" class="h-8 w-auto object-contain">
+                    <button id="mobile-close" class="text-slate-400 hover:text-button p-2" aria-label="Close menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="flex flex-col p-8 space-y-6">
+                    <li>
+                        <a href="/"
+                            class="block text-2xl font-bold transition-all duration-300 text-slate-800 hover:text-button hover:translate-x-2">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about"
+                            class="block text-2xl font-bold transition-all duration-300 text-slate-800 hover:text-button hover:translate-x-2">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/portofolio"
+                            class="block text-2xl font-bold transition-all duration-300 text-slate-800 hover:text-button hover:translate-x-2">
+                            Portfolio
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="mt-auto p-8 border-t border-slate-50 bg-slate-50">
+                    <a href="/contact-us"
+                        class="w-full py-4 bg-button text-white font-bold rounded-2xl flex items-center justify-center gap-2 shadow-xl shadow-button/20 hover:scale-[1.02] transition-transform">
+                        Hubungi Kami <span class="text-xl">→</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header / Hero Section -->
+    <div class="relative pt-16">
+        <div class="relative h-[42vh] min-h-[280px] flex items-center justify-center overflow-hidden">
+            <img src="/img/about2.png" class="absolute inset-0 w-full h-full object-cover" alt="Privacy Policy Banner">
+            <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-[2px]"></div>
+
+            <div class="relative container mx-auto px-6 lg:px-12 z-10 text-center">
+                <span
+                    class="inline-block px-4 py-1.5 mb-4 text-xs md:text-sm font-black tracking-[0.25em] text-button uppercase bg-button/10 border border-button/20 rounded-full">
+                    LEGAL & PRIVACY
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white italic tracking-tight">
+                    Privacy <span class="text-button">Policy</span>
+                </h1>
+                <p class="text-slate-300 text-sm md:text-base mt-3 max-w-xl mx-auto font-medium">
+                    Application: <strong class="text-white">TheSurvey</strong> | Effective Date: <strong
+                        class="text-white">October 7, 2026</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow container mx-auto max-w-4xl px-6 lg:px-8 -mt-12 relative z-20 mb-20">
+        <div class="bg-white rounded-[2rem] border border-slate-100 shadow-2xl p-8 md:p-14 policy-content">
+            <div class="flex items-center justify-center pb-6 mb-8 border-b border-slate-100">
+                <span
+                    class="inline-flex items-center px-4 py-1.5 bg-blue-50 text-blue-700 text-xs text-center font-bold rounded-full">
+                    Official Policy
+                </span>
+            </div>
+
+            <section>
+                <p>
+                    This Privacy Policy explains how <strong>TheSurvey</strong> ("we", "our", or "us"), developed by
+                    <strong>tri3a</strong>, collects, uses, and safeguards your information when you use our mobile
+                    application.
+                </p>
+                <p>
+                    By using <strong>TheSurvey</strong>, you agree to the collection and use of information in
+                    accordance with this policy. We are committed to protecting your privacy and ensuring your personal
+                    data is handled securely and responsibly.
+                </p>
+            </section>
+
+            <h2>1. Information We Collect</h2>
+            <p>To provide core surveyor and field data-collection functionalities, <strong>TheSurvey</strong> requests
+                access to specific permissions and data on your device:</p>
+
+            <ul>
+                <li>
+                    <strong>Precise & Approximate Location (GPS):</strong>
+                    We collect foreground location data (<code>ACCESS_FINE_LOCATION</code> and
+                    <code>ACCESS_COARSE_LOCATION</code>) to accurately tag and verify the geographic coordinates of
+                    surveyed points, properties, or objects in real time.
+                </li>
+                <li>
+                    <strong>Camera:</strong>
+                    We request access to your device's camera (<code>CAMERA</code>) to allow surveyors to capture photos
+                    directly within the app as visual proof and documentation for survey submissions.
+                </li>
+                <li>
+                    <strong>Photos & Media Storage:</strong>
+                    We request storage/media access (<code>READ_MEDIA_IMAGES</code>, <code>READ_EXTERNAL_STORAGE</code>)
+                    to allow you to attach existing images from your gallery to survey forms and to save captured media
+                    files locally.
+                </li>
+                <li>
+                    <strong>Audio / Microphone:</strong>
+                    We access the device microphone (<code>RECORD_AUDIO</code>) solely when you record voice notes or
+                    audio attachments related to survey assessments.
+                </li>
+                <li>
+                    <strong>Device & Application Data:</strong>
+                    We collect app version, device model, and operating system version for diagnostic and operational
+                    support.
+                </li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>All information gathered by <strong>TheSurvey</strong> is used strictly for <strong>App
+                    Functionality</strong> and surveyor operations:</p>
+            <ul>
+                <li>Verifying that the surveyor is physically present at the designated survey location.</li>
+                <li>Associating photographic and audio evidence with the correct survey questionnaire responses.</li>
+                <li>Enabling offline mode functionality, allowing survey records to be cached locally on the device
+                    until an internet connection is established.</li>
+                <li>Synchronizing completed survey submissions with our secure organizational server/backend API.</li>
+            </ul>
+
+            <div class="bg-blue-50/70 border-l-4 border-blue-500 rounded-r-2xl p-5 my-6">
+                <strong class="text-blue-900 block mb-1">Data Retention & Storage:</strong>
+                <p class="text-blue-800 text-sm m-0">
+                    Survey responses, coordinates, photos, and audio files are stored in local device storage for
+                    offline capability and uploaded to our backend servers upon synchronization. We do not sell or
+                    monetize your data.
+                </p>
+            </div>
+
+            <h2>3. Data Sharing and Third-Party Disclosures</h2>
+            <p>
+                We do not sell, rent, trade, or share your personal data, media, or location coordinates with
+                third-party advertising networks or external data brokers.
+            </p>
+            <p>
+                Data collected is transmitted solely to the designated backend infrastructure authorized by your
+                organization for processing and report generation.
+            </p>
+
+            <h2>4. Data Security</h2>
+            <p>
+                We implement industry-standard security safeguards to protect your data. All data transmissions between
+                the application and our servers are encrypted using Secure Socket Layer / Transport Layer Security
+                (HTTPS/SSL). Local data stored on the device is protected by operating system sandboxing.
+            </p>
+
+            <h2>5. Data Retention & Deletion Requests</h2>
+            <p>
+                We retain survey information only for as long as necessary to fulfill organizational reporting and
+                administrative purposes.
+            </p>
+            <p>
+                If you wish to request the deletion of your account, survey records, or any personal data associated
+                with your user identity, you may submit a request by contacting us at the email address provided below.
+                We will process and confirm your deletion request in accordance with applicable laws.
+            </p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>
+                <strong>TheSurvey</strong> is a professional enterprise and surveyor tool intended for use by authorized
+                personnel aged 18 and older. We do not knowingly collect personal information from children under the
+                age of 13.
+            </p>
+
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>
+                We may update our Privacy Policy periodically. We will notify users of any material changes by posting
+                the updated Privacy Policy on this page and updating the "Effective Date" at the top of the policy.
+            </p>
+
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 mt-4 space-y-2">
+                <p class="m-0"><strong class="text-slate-800">Developer / Organization:</strong> tri3a</p>
+                <p class="m-0"><strong class="text-slate-800">Application:</strong> TheSurvey (com.tri3a.thesurvey)</p>
+                <p class="m-0"><strong class="text-slate-800">Email:</strong> <a href="mailto:support@tri3a.com"
+                        class="text-button font-bold hover:underline">support@tri3a.com</a></p>
+                <p class="m-0"><strong class="text-slate-800">Location:</strong> Tangerang Selatan, Banten, Indonesia
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white py-12">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex flex-wrap justify-between gap-8">
+                <!-- About Section -->
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-2xl font-semibold mb-3 tracking-wide">ABOUT US</h3>
+                    <p class="text-sm text-gray-300 text-justify leading-relaxed">
+                        PT Aditya Arta Abadi, kami adalah perusahaan teknologi yang berfokus pada pengembangan solusi
+                        digital inovatif untuk membantu bisnis dan organisasi berkembang di era transformasi digital.
+                        Dengan pengalaman bertahun-tahun dalam industri IT, kami menghadirkan layanan web development,
+                        pengembangan aplikasi Android, konsultasi IT, serta pengembangan aplikasi desktop yang dirancang
+                        untuk meningkatkan efisiensi, produktivitas, dan daya saing bisnis Anda.
+                    </p>
+                </div>
+
+                <!-- Hubungi Kami Section -->
+                <div class="w-full md:w-1/3">
+                    <h3 class="text-2xl font-semibold mb-3 tracking-wide">HUBUNGI KAMI</h3>
+                    <div class="flex items-start gap-3 mb-4">
+                        <svg class="h-6 w-6 text-slate-100 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <p class="text-gray-300 text-sm">Ruko Victorian Blok CC06, Jl.Bintaro Utama 3A-Pd. Karya Kec.
+                            Pd. Aren, Kota Tangerang Selatan, Banten 15225, Indonesia</p>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="h-6 w-6 text-slate-100 shrink-0" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <p class="text-gray-300 text-sm">(021) 27592693</p>
+                    </div>
+                    <div class="flex space-x-4 mt-3">
+                        <!-- EMAIL -->
+                        <a href="mailto:info@tri3a.com" class="hover:scale-125 transition-transform duration-200"
+                            title="Email Us">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48">
+                                <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z">
+                                </path>
+                                <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z">
+                                </path>
+                                <polygon fill="#e53935"
+                                    points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon>
+                                <path fill="#c62828"
+                                    d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z">
+                                </path>
+                                <path fill="#fbc02d"
+                                    d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z">
+                                </path>
+                            </svg>
+                        </a>
+                        <!-- IG -->
+                        <a href="https://www.instagram.com/zahraideaprima/" target="_blank" rel="noopener noreferrer"
+                            class="hover:scale-125 transition-transform duration-200" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 48 48">
+                                <radialGradient id="ig_grad1" cx="19.38" cy="42.035" r="44.899"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#fd5"></stop>
+                                    <stop offset=".328" stop-color="#ff543f"></stop>
+                                    <stop offset=".348" stop-color="#fc5245"></stop>
+                                    <stop offset=".504" stop-color="#e64771"></stop>
+                                    <stop offset=".643" stop-color="#d53e91"></stop>
+                                    <stop offset=".761" stop-color="#cc39a4"></stop>
+                                    <stop offset=".841" stop-color="#c837ab"></stop>
+                                </radialGradient>
+                                <path fill="url(#ig_grad1)"
+                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                </path>
+                                <path fill="#fff"
+                                    d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                                </path>
+                                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                                <path fill="#fff"
+                                    d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12 C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Section -->
+            <div class="mt-12 pt-8 border-t border-gray-600 text-center text-sm text-gray-300 space-y-2">
+                <p class="text-gray-300">&copy; 2026 PT. Aditya Arta Abadi. All rights reserved.</p>
+                <div>
+                    <a href="/privacy-policy.html"
+                        class="text-gray-300 hover:text-white hover:underline transition-colors duration-200">
+                        Privacy Policy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Navigation Scripts -->
+    <script>
+        const navbar = document.getElementById('navbar');
+        const navLogo = document.getElementById('nav-logo');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const bar1 = document.getElementById('bar-1');
+        const bar2 = document.getElementById('bar-2');
+        const bar3 = document.getElementById('bar-3');
+
+        let isMenuOpen = false;
+
+        function handleScroll() {
+            const isScrolled = window.scrollY > 20;
+            if (isScrolled) {
+                navbar.className = 'fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-white/95 backdrop-blur-md shadow-xl py-3';
+                navLogo.src = '/img/logo3a.png';
+                navLinks.forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-slate-700');
+                });
+                if (!isMenuOpen) {
+                    bar1.classList.remove('bg-white'); bar1.classList.add('bg-slate-800');
+                    bar2.classList.remove('bg-white'); bar2.classList.add('bg-slate-800');
+                    bar3.classList.remove('bg-white'); bar3.classList.add('bg-slate-800');
+                }
+            } else {
+                navbar.className = 'fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-gradient-to-b from-black/60 to-transparent py-5';
+                navLogo.src = '/img/logo3a-white.png';
+                navLinks.forEach(link => {
+                    link.classList.remove('text-slate-700');
+                    link.classList.add('text-white');
+                });
+                if (!isMenuOpen) {
+                    bar1.classList.remove('bg-slate-800'); bar1.classList.add('bg-white');
+                    bar2.classList.remove('bg-slate-800'); bar2.classList.add('bg-white');
+                    bar3.classList.remove('bg-slate-800'); bar3.classList.add('bg-white');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Mobile drawer handling
+        const toggleBtn = document.getElementById('mobile-toggle');
+        const closeBtn = document.getElementById('mobile-close');
+        const overlay = document.getElementById('mobile-overlay');
+        const menu = document.getElementById('mobile-menu');
+
+        function openMenu() {
+            isMenuOpen = true;
+            overlay.classList.remove('hidden');
+            setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+            menu.classList.remove('translate-x-full');
+            bar1.classList.add('rotate-45', 'translate-y-[7px]', 'bg-slate-800');
+            bar1.classList.remove('bg-white');
+            bar2.classList.add('opacity-0');
+            bar3.classList.add('-rotate-45', '-translate-y-[7px]', 'bg-slate-800');
+            bar3.classList.remove('bg-white');
+        }
+
+        function closeMenu() {
+            isMenuOpen = false;
+            overlay.classList.add('opacity-0');
+            menu.classList.add('translate-x-full');
+            setTimeout(() => overlay.classList.add('hidden'), 300);
+            bar1.classList.remove('rotate-45', 'translate-y-[7px]');
+            bar2.classList.remove('opacity-0');
+            bar3.classList.remove('-rotate-45', '-translate-y-[7px]');
+            handleScroll();
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            if (isMenuOpen) closeMenu(); else openMenu();
+        });
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+    </script>
+</body>
+
+</html>
